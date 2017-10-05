@@ -21,11 +21,19 @@ public class ManipulateDna {
       System.out.println("Unable to locate file");
     }
     // Step One: Read in and display the chosen DNA string
-
+    String dna =  scanner.nextLine();
+    System.out.println("Lancaster Wu " + new Date());
+    System.out.println("Okay, I am going to manipulate the DNA string: \"" + dna + "\".");
+    System.out.println();
     // Step Two: Compute the complement of the DNA String
-
+    System.out.println("Enter a string containing only C, G, T, and A: " + dna);
+    String complement1 = dna.replace("a","T");
+    String complement2 = complement1.replace("c","G");
+    String complement3 = complement2.replace("t","A");
+    String complement4 = complement3.replace("g","C");
+    System.out.println("Complement of " + dna.toUpperCase() + " is " + complement4);
     // Step Three: Insert a randomly chosen DNA letter into the DNA String
-
+    Random generator = new Random();
     // Step Four: Delete a DNA letter from a randomly chosen position in the DNA string
 
     // Step Five: Change a random position in the DNA String to a randomly chosen DNA letter
